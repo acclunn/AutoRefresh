@@ -1,15 +1,21 @@
 {
-    "name": "Auto Refresh",
-    "description": "Refresh the page by set interval",
-    "version": "0.1",
     "manifest_version": 3,
-
+    "name": "Auto Refresh",
+    "version": "0.1",
+    "description": "Refresh the page by set interval",
+    
     "action": {
         "default_popup": "popup.html"
     },
 
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js": ["refresh.js"]
-    }]
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+        }
+    ],
+    
+    "permissions": ["activeTab"]
 }
