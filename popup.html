@@ -2,10 +2,20 @@
 <html>
     <head>
         <link rel="stylesheet" href="popup.css">
+        <title>AutoRefresh</title>
     </head>
     <body>
-        <h1>Auto Refresh</h1>
+        <h3>Auto Refresh</h3>
+        
+        <p>Set refresh rate:</p>
 
-        <p>Set refresh rate</p>
+        <form>
+            <label for="minutes">
+            <input id="timer_input" type="number" min=0 max=59>
+            minutes</label>
+        </form>
+        <br>
+        <button id="setTimer">Set</button>
     </body>
+    <script src="popup.js"></script>
 </html>
